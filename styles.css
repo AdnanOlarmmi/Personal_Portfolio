@@ -60,6 +60,7 @@ section {
 #section__ownerName {
   font-weight: 700;
   font-size: 48px;
+  margin: 0.5em;
   line-height: 72px;
   text-align: center;
   letter-spacing: 0.37px;
@@ -69,6 +70,7 @@ section {
 #section__ownerRole {
   font-weight: 500;
   font-size: 32px;
+  margin: 0.5em;
   line-height: 44px;
   color: #edecff;
 }
@@ -76,6 +78,7 @@ section {
 #section__ownerAbout {
   font-weight: 400;
   font-size: 20px;
+  margin: 4em;
   line-height: 28px;
   color: #c8c8d4;
 }
