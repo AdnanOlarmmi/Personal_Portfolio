@@ -1,3 +1,87 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url('Roboto/Roboto-Regular.ttf') format("truetype");
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #191765;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Roboto', sans-serif;
+  height: 100vh;
+}
+
+#ellipse {
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  left: -33px;
+  top: 44px;
+  background: #edecff;
+  filter: blur(60px);
+}
+
 h1 {
   color: black;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__icon {
+  margin-left: 7%;
+  font-size: 44px;
+  text-decoration: none;
+  position: relative;
+}
+
+.burger {
+  margin-right: 7%;
+  font-size: 44px;
+  cursor: pointer;
+}
+
+section {
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+}
+
+#section__ownerName {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 72px;
+  text-align: center;
+  letter-spacing: 0.37px;
+  color: #7d73fc;
+}
+
+#section__ownerRole {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 44px;
+  color: #edecff;
+}
+
+#section__ownerAbout {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #c8c8d4;
+}
+
+@media only screen and (min-width: 600px) {
+  h5 {
+    color: white;
+  }
 }
