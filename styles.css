@@ -1,3 +1,160 @@
-h1 {
-  color: black;
+@font-face {
+  font-family: 'Roboto';
+  src: url('Roboto/Roboto-Regular.ttf') format("truetype");
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  font-family: Roboto, sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 375px;
+  background-color: #191765;
+  background-image: url(images/Topcircles.svg);
+  background-repeat: no-repeat;
+
+  /* background-size: cover; */
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3px;
+  align-items: center;
+}
+
+.nav__icon {
+  margin-left: 24px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 16px;
+}
+
+.burger {
+  margin-right: 24px;
+  width: 35.33px;
+  height: 22.83px;
+  cursor: pointer;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+.sectionOne {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  width: 327px;
+  margin: 0 auto;
+}
+
+#section__ownerName {
+  width: 100%;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 72px;
+  text-align: center;
+  letter-spacing: 0.37px;
+  color: #7d73fc;
+  margin: 63px 24px 6px;
+}
+
+#section__ownerRole {
+  width: 100%;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 44px;
+  color: #edecff;
+  margin: 6px 24px 20px;
+}
+
+#section__ownerAbout {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #c8c8d4;
+  margin: 20px 24px 33px;
+  width: 100%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.sectionTwoDiv {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 40px 36px 40px;
+}
+
+.sectionTwo__languages {
+  width: 123px;
+  height: 167.33px;
+}
+
+.sectionTwo__frameworks {
+  width: 156px;
+  margin-bottom: 37px;
+}
+
+.sectionTwo__skills {
+  width: 122px;
+}
+
+.sectionTwo__languages__topic {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #9490ff;
+  margin-bottom: 24.5px;
+}
+
+.sectionTwo__languages__topic--list li {
+  font-weight: 400;
+  font-size: 15px;
+  color: #f5f5ff;
+  margin-bottom: 21px;
+}
+
+.sectionTwo img {
+  display: block;
+  margin: 0 auto;
+  width: auto;
+}
+
+.contactsIcon {
+  display: flex;
+  justify-content: center;
+  margin-top: 58px;
+}
+
+.contactsIcon li {
+  transition: all 0.35s ease-in-out;
+}
+
+.contactsIcon li + li {
+  margin-left: 22px;
+}
+
+.contactsIcon li:hover {
+  transform: scale(1.2);
+  transition: all 0.35s ease-in;
 }
