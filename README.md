@@ -1,46 +1,55 @@
-Project Name
-Is-haq Adnan's Personal Portfolio
+![](https://img.shields.io/badge/Microverse-blueviolet)
 
-Built With
+# Project Name
+Is-haq Adnan's Personal Portfolio.
+
+> Description the project.
+
+A development about my developments.
+
+## Built With
+
+- Major languages
 Html
 Css
-linter
-node
+- Frameworks
+None
+- Technologies used
+Linters
+Node packet manager
 
-Getting Started
-This is a development about my developments and expertise
+## Live Demo (if available)
+
+[Live Demo Link](https://livedemo.com)
+
+*
+
 
 To get a local copy up and running follow these simple example steps.
 
-Prerequisites
-Basic knowledge of html, css, and linters
-
-Setup
+### Prerequisites
+Basic Knowledge of html, css and linters
+### Setup
 Visual studio code
+### Install
+Install node
 
-Install
-node package manager
+## Authors
 
-Authors
-👤 Author1
-GitHub: @AdnanOlarmmi
-Twitter: @AdnanIs71755510
-LinkedIn: Adnan (Olamilekan) Is-haq  (www.linkedin.com/in/adnan-is-haq-olamilekan)
+👤 **Author1**
 
-🤝 Contributing
+- GitHub: [@AdnanOlarmmi](https://github.com/adnanolarmmi)
+- Twitter: [@AdnanIs71755510](https://twitter.com/AdnanIs71755510)
+- LinkedIn: [Adnan (Olamilekan) Is-haq](https://linkedin.com/in/adnan-is-haq-olamilekan)
+
+## 🤝 Contributing
+
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the issues page.
+## Show your support
 
-Show your support
 Give a ⭐️ if you like this project!
 
-Acknowledgments
-Hat tip to anyone whose code was used
-Inspiration
-etc
+## Acknowledgments
 
-📝 License
-This project is MIT licensed.
-
-NOTE: we recommend using the MIT license - you can set it up quickly by using templates available on GitHub. You can also use any other license if you wish.
+- Hat tip to anyone whose code was used
