@@ -23,10 +23,17 @@ body {
   flex-direction: column;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 375px;
+}
+
 .hero-container {
   display: flex;
   flex-direction: column;
-  width: 375px;
+  width: 100%;
   background-color: #191765;
   background-image: url(images/Topcircles.svg);
   background-repeat: no-repeat;
@@ -111,12 +118,12 @@ ul {
 }
 
 .sectionTwo__languages {
-  width: 123px;
-  height: 167.33px;
+  /* width: 123px; */
+  padding-right: 62px;
 }
 
 .sectionTwo__frameworks {
-  width: 156px;
+  /* width: 156px; */
   margin-bottom: 37px;
 }
 
@@ -154,7 +161,9 @@ ul {
 }
 
 .contactsIcon li {
-  transition: all 0.35s ease-in-out;
+  transition: transform 0.35s ease-in-out;
+
+  /* transition: all 0.35s ease-in-out, color 0.35s ease-in-out; easein might be ommited */
 }
 
 .contactsIcon li + li {
@@ -163,13 +172,12 @@ ul {
 
 .contactsIcon li:hover {
   transform: scale(1.2);
-  transition: all 0.35s ease-in;
 }
 
 .projects-container {
   display: flex;
   flex-direction: column;
-  width: 375px;
+  width: 100%;
   background-color: #191765;
   background-image: url(images/portfoliobackgroundshapesmobile.svg);
   background-repeat: no-repeat;
@@ -196,7 +204,7 @@ ul {
   font-size: 40px;
   line-height: 52px;
   color: #9490ff;
-  width: 327px;
+  width: fit-content;
   margin: 0 24px 34px;
 }
 
@@ -247,8 +255,7 @@ ul {
   cursor: pointer;
   padding: 12px;
   background-color: #7d73fc;
-  width: 89px;
-  height: 48px;
+  width: fit-content;
   font-size: 12px;
   line-height: 24px;
   letter-spacing: 0.03em;
@@ -259,7 +266,6 @@ ul {
 
 .seeProject:hover {
   box-shadow: 0.002px 8px 16px rgba(125, 115, 252, 0.48);
-  transition: all 0.35s ease-in-out;
 }
 
 .seeProject:disabled {
