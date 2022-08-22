@@ -354,3 +354,7 @@ textarea::placeholder {
   color: #ebebff;
   margin: 9px auto 2px;
 }
+
+.btm_line {
+  width: 100%
+}
