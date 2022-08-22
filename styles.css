@@ -61,6 +61,10 @@ header {
   line-height: 16px;
 }
 
+.nav__items {
+  display: none;
+}
+
 .burger {
   margin-right: 24px;
   width: 35.33px;
@@ -442,5 +446,9 @@ textarea::placeholder {
 
   .burger {
     display: none;
+  }
+
+  .nav__items {
+    display: flex;
   }
 }
