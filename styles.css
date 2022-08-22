@@ -275,7 +275,6 @@ ul {
 .about {
   display: flex;
   flex-direction: column;
-  
   margin-top: 128px;
   margin-left: 24px;
   margin-right: 24px;
