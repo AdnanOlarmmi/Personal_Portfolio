@@ -453,7 +453,8 @@ footer {
     font-size: 17rem;
   }
 
-  .sectionTwo__frameworks, .projects__item-details {
+  .sectionTwo__frameworks,
+  .projects__item-details {
     margin-bottom: 0;
   }
 
