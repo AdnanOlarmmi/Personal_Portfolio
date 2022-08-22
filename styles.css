@@ -275,8 +275,9 @@ ul {
 .about {
   display: flex;
   flex-direction: column;
-  align-items: center;
   margin-top: 128px;
+  margin-left: 24px;
+  margin-right: 24px;
 }
 
 #about__contactUs {
@@ -284,7 +285,8 @@ ul {
   font-weight: 500;
   font-size: 32px;
   line-height: 44px;
-  margin-bottom: 24px;
+  margin: 0 auto 24px;
+  text-align: center;
 }
 
 #about__needHelp {
@@ -293,6 +295,62 @@ ul {
   font-weight: 400;
   line-height: 24px;
   color: #f5f5ff;
-  margin: 0 24px 40px;
+  margin-bottom: 40px;
   text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin: 40px 0;
+}
+
+.input {
+  display: flex;
+  margin-bottom: 24px;
+  background-color: #fff;
+  height: 48px;
+  width: 100%;
+  align-items: center;
+  padding: 15px 16px;
+  font-size: 2px;
+}
+
+form input,
+form textarea {
+  background: transparent;
+  border: 0;
+  outline: none;
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.textarea {
+  margin-bottom: 24px;
+  background-color: #fff;
+  height: 148px;
+  width: 100%;
+  padding: 12px;
+  font-size: 2px;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #81818c;
+}
+
+#btm-btn {
+  margin: 0 auto 39px;
+}
+
+#email {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #ebebff;
+  margin: 9px auto 2px;
 }
