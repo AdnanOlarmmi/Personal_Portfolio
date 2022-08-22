@@ -1,3 +1,7 @@
+:root {
+  font-size: calc(0.0694vw);
+}
+
 @font-face {
   font-family: 'Roboto';
   src: url('Fonts/Roboto/Roboto-Regular.ttf') format("truetype");
@@ -103,12 +107,20 @@ main {
   font-size: 20px;
   line-height: 28px;
   color: #c8c8d4;
-  margin: 20px 24px 33px;
   width: 100%;
+  margin-bottom: 33px;
+  text-align: center;
 }
 
 ul {
   list-style-type: none;
+}
+
+.sectionTwo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 40px 24px 50px;
 }
 
 .sectionTwoDiv {
@@ -151,7 +163,7 @@ ul {
 .line {
   display: block;
   margin: 0 auto;
-  width: auto;
+  width: max-content;
 }
 
 .contactsIcon {
@@ -352,4 +364,83 @@ textarea::placeholder {
   line-height: 28px;
   color: #ebebff;
   margin-top: 9px;
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    width: 99vw;
+    font-size: 16px;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .hero-container {
+    background-image: url(images/topcirclesdesktop.svg);
+    background-size: 90vw;
+    background-position: 0% 28%;
+  }
+
+  #section__ownerName {
+    font-size: 90rem;
+    line-height: 105.47rem;
+    text-align: center;
+    color: #7d73fc;
+    margin: 140rem 142rem 24rem;
+    width: 1156rem;
+  }
+
+  #section__ownerRole {
+    font-size: 40rem;
+    line-height: 46.88rem;
+    margin: 0 142rem 33rem;
+  }
+
+  #section__ownerAbout {
+    line-height: 33rem;
+    width: 447rem;
+    margin: 0 auto 33rem;
+  }
+
+  .sectionTwo {
+    width: 448rem;
+    margin: 55rem 496rem 98rem;
+    align-items: flex-start;
+  }
+
+  .sectionTwo img,
+  .line {
+    width: 100%;
+  }
+
+  .sectionTwoDiv {
+    margin: 32rem 1rem 33rem;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+  }
+
+  .sectionTwo__frameworks {
+    /* width: 156px; */
+    margin-bottom: 37px;
+  }
+
+  .sectionTwo__skills {
+    width: 122rem;
+    margin-left: 70rem;
+  }
+
+  .sectionTwo__languages__topic {
+    font-size: 18rem;
+    line-height: 29.33rem;
+    letter-spacing: 0.03em;
+  }
+
+  .sectionTwo__languages__topic--list li {
+    font-size: 17rem;
+  }
+
+  .burger {
+    display: none;
+  }
 }
