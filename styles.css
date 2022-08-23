@@ -244,10 +244,15 @@ ul {
 }
 
 .projects__item-language {
-  display: flex;
+  /* display: flex;
   justify-content: space-around;
-  align-items: center;
+  align-items: center; */
   color: #fff;
+  float: left;
+}
+
+.languageItems {
+  float: left;
 }
 
 .seeProject {
