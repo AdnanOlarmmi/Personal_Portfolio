@@ -531,6 +531,7 @@ footer {
     height: 448rem;
     justify-content: center;
     align-items: flex-end;
+    margin-top: 88rem;
   }
 
   .projects__item-name {
