@@ -306,6 +306,8 @@ ul {
   font-size: 32px;
   line-height: 44px;
   margin: 0 auto 24px;
+  text-align: center;
+
 }
 
 #about__needHelp {
@@ -362,7 +364,7 @@ textarea::placeholder {
 }
 
 #btm-btn {
-  margin-bottom: 39px;
+  margin: 0 auto 39px;
 }
 
 #email {
@@ -372,6 +374,11 @@ textarea::placeholder {
   font-size: 20px;
   line-height: 28px;
   color: #ebebff;
+;
+}
+
+.btm_line {
+  width: 100%;
 }
 
 footer {
