@@ -307,7 +307,6 @@ ul {
   line-height: 44px;
   margin: 0 auto 24px;
   text-align: center;
-
 }
 
 #about__needHelp {
@@ -374,7 +373,7 @@ textarea::placeholder {
   font-size: 20px;
   line-height: 28px;
   color: #ebebff;
-;
+  padding: 40rem 0;
 }
 
 .btm_line {
