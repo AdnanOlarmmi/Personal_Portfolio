@@ -1,6 +1,7 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
 # Project Name
+
 Is-haq Adnan's Personal Portfolio.
 
 > Description the project.
@@ -10,28 +11,30 @@ A development about my developments.
 ## Built With
 
 - Major languages
-Html
-Css
+  Html
+  Css
 - Frameworks
-None
+  None
 - Technologies used
-Linters
-Node packet manager
+  Linters
+  Node packet manager
 
 ## Live Demo (if available)
 
-[Live Demo Link](https://livedemo.com)
-
-*
-
+https://adnanolarmmi.github.io/Personal_Portfolio/
 
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
+
 Basic Knowledge of html, css and linters
+
 ### Setup
+
 Visual studio code
+
 ### Install
+
 Install node
 
 ## Authors
