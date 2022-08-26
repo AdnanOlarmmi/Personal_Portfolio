@@ -58,6 +58,13 @@ header {
   font-weight: 500;
   font-size: 18px;
   line-height: 16px;
+  animation: rotateZ 5s;
+}
+
+@keyframes rotateZ {
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .nav__items {
@@ -317,6 +324,11 @@ ul {
   color: #f5f5ff;
   margin-bottom: 40px;
   text-align: center;
+  transition: all 0.35s ease-in;
+}
+
+#about__needHelp:hover {
+  transform: translate(8%);
 }
 
 form {
