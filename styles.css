@@ -58,6 +58,14 @@ header {
   font-weight: 500;
   font-size: 18px;
   line-height: 16px;
+  animation: rotateZ 5s;
+}
+
+@keyframes rotateZ {
+  to {
+    transform: rotate(360deg);
+  }
+
 }
 
 .nav__items {
