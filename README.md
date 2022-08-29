@@ -27,7 +27,7 @@ To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-Basic Knowledge of html, css and linters
+Basic Knowledge of html, css and linters and npm
 
 ### Setup
 
