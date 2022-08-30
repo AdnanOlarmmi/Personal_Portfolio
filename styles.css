@@ -272,6 +272,10 @@ ul {
 }
 
 .projects__item-language {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
   display: flex;
   justify-content: space-around;
   align-items: center;
