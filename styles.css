@@ -192,7 +192,6 @@ ul {
 
 .contactsIcon li:hover {
   transform: scale(1.2);
-  cursor: pointer;
 }
 
 .projects-container {
