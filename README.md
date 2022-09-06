@@ -19,11 +19,20 @@ A development about my developments.
   Linters
   Node packet manager
 
-## Live Demo (if available)
+## Live Demo
 
-https://adnanolarmmi.github.io/Personal_Portfolio/
+[Acces The live Demo Here](https://adnanolarmmi.github.io/Personal_Portfolio/)
 
 To get a local copy up and running follow these simple example steps.
+
+From the repository, select the Clone button.
+
+Copy the clone command (either the SSH format or the HTTPS).
+If you are using the SSH protocol, ensure your public key is in Bitbucket and loaded on the local system to which you are cloning.
+
+From a terminal window, change to the local directory where you want to clone your repository.
+
+Paste the command you copied
 
 ### Prerequisites
 
@@ -44,6 +53,18 @@ Install node
 - GitHub: [@AdnanOlarmmi](https://github.com/adnanolarmmi)
 - Twitter: [@AdnanIs71755510](https://twitter.com/AdnanIs71755510)
 - LinkedIn: [Adnan (Olamilekan) Is-haq](https://linkedin.com/in/adnan-is-haq-olamilekan)
+
+👤 **Author2**
+
+Selma Ndapanda Hamutenya
+
+👤 **Author2**
+
+Olubukky Grace Attitebi
+
+👤 **Author4**
+
+Joel Kugonza
 
 ## 🤝 Contributing
 
