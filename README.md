@@ -25,14 +25,6 @@ A development about my developments.
 
 To get a local copy up and running follow these simple example steps.
 
-### Prerequisites
-
-Basic Knowledge of html, css and linters and npm
-
-### Setup
-
-Visual studio code
-
 From the repository, select the Clone button.
 
 Copy the clone command (either the SSH format or the HTTPS).
@@ -41,6 +33,14 @@ If you are using the SSH protocol, ensure your public key is in Bitbucket and lo
 From a terminal window, change to the local directory where you want to clone your repository.
 
 Paste the command you copied
+
+### Prerequisites
+
+Basic Knowledge of html, css and linters and npm
+
+### Setup
+
+Visual studio code
 
 ### Install
 
