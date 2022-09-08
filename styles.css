@@ -498,6 +498,11 @@ footer {
   margin: 0 auto;
 }
 
+.popUpWindow .projects__item-language img {
+  border-left: 2px solid #81818c;
+  width: 0;
+}
+
 .popupWindow__button {
   display: flex;
   flex-direction: column;
@@ -794,11 +799,6 @@ footer {
   .popUpWindow .projects__item-language {
     width: 304rem;
     margin: 0 auto;
-  }
-
-  .popUpWindow .projects__item-language img {
-    border-left: 1px solid #81818c;
-    width: 0;
   }
 
   .popupWindow__button {
