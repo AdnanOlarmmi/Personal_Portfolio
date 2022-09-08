@@ -35,13 +35,8 @@ function showNav() {
   navUntriggerEl.classList.add('open');
 }
 
-function toggleNav() {
-  navTriggerEl.addEventListener('click', showNav);
-  navUntriggerEl.addEventListener('click', hideNav);
-  navItems.forEach((item) => {
-    item.addEventListener('click', hideNav);
-  });
-}
+
+<<<<<<< Updated upstream
 
 const renderPopUp = (id) => {
   const markup = `<div class="popUpwindow__head flex-row">
@@ -152,3 +147,6 @@ const renderProjectDetails = () => {
 toggleNav();
 renderProjectDetails();
 togglePopUp();
+=======
+toggleNav();
+>>>>>>> Stashed changes
