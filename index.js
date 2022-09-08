@@ -17,7 +17,7 @@ const projectdetails = [
     name: 'Story Stories story', description: 'Lorem Ipsum is simply dummy text of the printing and typesettingindustry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum i ssimply dummy text of theprinting and typesetting industry. Lorem Ipsum has been theindustry\'s standard dummy text ever since the 1500s, when an unknown Lorem Ipsum is simply dummy text of the printing andtypesetting industry. Lorem Ipsum has been the industry\'s standarddummy text ever since the 1500s, when an unknown printer took a galley of type and scramble.', featuredImage: 'images/ImgPlaceholder.svg', technologies: ['html', 'css', 'bootstrap', 'ruby'], linkLiveVersion: '', linkVersion: '',
   },
   {
-    name: 'Story Story stories', description: 'Lorem Ipsum is simply dummy text of the printing and typesettingindustry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum i ssimply dummy text of theprinting and typesetting industry. Lorem Ipsum has been theindustry\'s standard dummy text ever since the 1500s, when an unknown Lorem Ipsum is simply dummy text of the printing andtypesetting industry. Lorem Ipsum has been the industry\'s standarddummy text ever since the 1500s, when an unknown printer took a galley of type and scramble.', featuredImage: 'images/ImgPlaceholder.svg', technologies: ['html', 'css', 'bootstrap', 'ruby'], linkLiveVersion: '', linkVersion: '',
+    name: 'Story Story stories', description: 'Adnan Ipsum is simply dummy text of the printing and typesettingindustry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum i ssimply dummy text of theprinting and typesetting industry. Lorem Ipsum has been theindustry\'s standard dummy text ever since the 1500s, when an unknown Lorem Ipsum is simply dummy text of the printing andtypesetting industry. Lorem Ipsum has been the industry\'s standarddummy text ever since the 1500s, when an unknown printer took a galley of type and scramble.', featuredImage: 'images/ImgPlaceholder.svg', technologies: ['html', 'css', 'bootstrap', 'ruby'], linkLiveVersion: '', linkVersion: '',
   },
 ];
 
@@ -37,22 +37,74 @@ function showNav() {
 
 function toggleNav() {
   navTriggerEl.addEventListener('click', showNav);
-
   navUntriggerEl.addEventListener('click', hideNav);
-
   navItems.forEach((item) => {
     item.addEventListener('click', hideNav);
   });
 }
 
+const renderPopUp = (id) => {
+  const markup = `<div class="popUpwindow__head flex-row">
+    <p>${projectdetails[id].name}</p>
+    <img
+      src="images/X-Icon.svg"
+      alt="X-Icon"
+      style="cursor: pointer"
+      class="Xpop"
+    />
+  </div>
+  <img
+    src="${projectdetails[id].featuredImage}"
+    class="snapshoot"
+    alt="Projectsneekpeak"
+  />
+  <p class="popUpWindow__text">${projectdetails[id].description}</p>
+  <ul class="projects__item-language">
+    <li>
+      <img src="images/Rectangle.svg" alt="straightLine" />
+    </li>
+    <li class="projects__item-language-item">${projectdetails[id].technologies[0]}</li>
+    <li>
+      <img src="images/Rectangle.svg" alt="straightLine" />
+    </li>
 
+    <li class="projects__item-language-item">${projectdetails[id].technologies[1]}</li>
+    <li>
+      <img src="images/Rectangle.svg" alt="straightLine" />
+    </li>
+    <li class="projects__item-language-item">${projectdetails[id].technologies[2]}</li>
+    <li>
+      <img src="images/Rectangle.svg" alt="straightLine" />
+    </li>
+    <li class="projects__item-language-item">${projectdetails[id].technologies[3]}</li>
+    <li>
+      <img src="images/Rectangle.svg" alt="straightLine" />
+    </li>
+  </ul>
+  <div class="popupWindow__button flex-row">
+    <a href="#" class="seeProject seeLive flex-row"
+      >See Live <img src="images/Seelive.svg" alt="Golive"
+    /></a>
+    <a href="#" class="seeProject flex-row seeLive"
+      >See Source
+      <img src="images/Icons/Vectorgithubicon.svg" alt="githubIcon"
+    /></a>
+  </div>`;
+
+  popUpWindow.innerHTML = markup;
+  for (let i = 0; i < PopUntriggerEl.length; i += 1) {
+    PopUntriggerEl[i].addEventListener('click', () => {
+      popUpWindow.classList.remove('showPopUp');
+    });
+  }
+};
 
 function togglePopUp() {
-  for (let i = 0; i < seeProject.length; i + 1) {
+  for (let i = 0; i < seeProject.length; i += 1) {
     seeProject[i].addEventListener('click', (e) => {
-      const projectId = e.target.id;
-      renderPopUp(projectId);
+      e.preventDefault();
       popUpWindow.classList.add('showPopUp');
+      renderPopUp(e.target.id);
     });
   }
 }
@@ -75,22 +127,22 @@ const renderProjectDetails = () => {
       standard dummy text.
     </p>
     <ul class="projects__item-language">
-    <li class="projects__item-language-item">${elem.technologies[0]}</li>
-<li>
-  <img src="images/Rectangle.svg" alt="straightLine" />
-</li>
+      <li class="projects__item-language-item">${elem.technologies[0]}</li>
+      <li>
+        <img src="images/Rectangle.svg" alt="straightLine" />
+      </li>
 
-<li class="projects__item-language-item">${elem.technologies[1]}</li>
-<li>
-  <img src="images/Rectangle.svg" alt="straightLine" />
-</li>
-<li class="projects__item-language-item">${elem.technologies[2]}</li>
-<li>
-  <img src="images/Rectangle.svg" alt="straightLine" />
-</li>
-<li class="projects__item-language-item">${elem.technologies[3]}</li>
+      <li class="projects__item-language-item">${elem.technologies[1]}</li>
+      <li>
+        <img src="images/Rectangle.svg" alt="straightLine" />
+      </li>
+      <li class="projects__item-language-item">${elem.technologies[2]}</li>
+      <li>
+        <img src="images/Rectangle.svg" alt="straightLine" />
+      </li>
+      <li class="projects__item-language-item">${elem.technologies[3]}</li>
     </ul>
-    <a href="#" class="seeProject" id=${index}>See project ${index}</a>
+    <a href="#" class="seeProject" id=${index}>See project</a>
   </div>
 </div>`;
   });
