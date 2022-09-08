@@ -42,7 +42,6 @@ function toggleNav() {
     item.addEventListener('click', hideNav);
   });
 }
-<<<<<<< Updated upstream
 
 const renderPopUp = (id) => {
   const markup = `<div class="popUpwindow__head flex-row">
@@ -153,6 +152,4 @@ const renderProjectDetails = () => {
 toggleNav();
 renderProjectDetails();
 togglePopUp();
-=======
 toggleNav();
->>>>>>> Stashed changes
