@@ -45,63 +45,7 @@ function toggleNav() {
   });
 }
 
-const renderPopUp = (id) => {
-  const markup = `<div class="popUpwindow__head flex-row">
-    <p>${projectdetails[id].name}</p>
-    <img
-      src="images/X-Icon.svg"
-      alt="X-Icon"
-      style="cursor: pointer"
-      class="Xpop"
-    />
-  </div>
-  <img
-    src="${projectdetails[id].featuredImage}"
-    class="snapshoot"
-    alt="Projectsneekpeak"
-  />
-  <p class="popUpWindow__text">
-    ${projectdetails[id].description}
-  </p>
-  <ul class="projects__item-language">
-    <li>
-      <img src="images/Rectangle.svg" alt="straightLine" />
-    </li>
-    <li class="projects__item-language-item">${projectdetails[id].technologies[0]}</li>
-    <li>
-      <img src="images/Rectangle.svg" alt="straightLine" />
-    </li>
 
-    <li class="projects__item-language-item">${projectdetails[id].technologies[1]}</li>
-    <li>
-      <img src="images/Rectangle.svg" alt="straightLine" />
-    </li>
-    <li class="projects__item-language-item">${projectdetails[id].technologies[2]}</li>
-    <li>
-      <img src="images/Rectangle.svg" alt="straightLine" />
-    </li>
-    <li class="projects__item-language-item">${projectdetails[id].technologies[3]}</li>
-    <li>
-      <img src="images/Rectangle.svg" alt="straightLine" />
-    </li>
-  </ul>
-  <div class="popupWindow__button flex-row">
-    <a href="#" class="seeProject seeLive flex-row"
-      >See Live <img src="images/Seelive.svg" alt="Golive"
-    /></a>
-    <a href="#" class="seeProject flex-row seeLive"
-      >See Source
-      <img src="images/Icons/Vectorgithubicon.svg" alt="githubIcon"
-    /></a>
-  </div>`;
-
-  popUpWindow.innerHTML = markup;
-  for (let i = 0; i < PopUntriggerEl.length; i + 1) {
-    PopUntriggerEl[i].addEventListener('click', () => {
-      popUpWindow.classList.remove('showPopUp');
-    });
-  }
-};
 
 function togglePopUp() {
   for (let i = 0; i < seeProject.length; i + 1) {
