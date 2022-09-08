@@ -648,6 +648,7 @@ footer {
     background-image: none;
     background-color: transparent;
     left: 0;
+    visibility: visible;
   }
 
   .workMobile {
