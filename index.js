@@ -102,6 +102,7 @@ const renderPopUp = (id) => {
 function togglePopUp() {
   for (let i = 0; i < seeProject.length; i += 1) {
     seeProject[i].addEventListener('click', (e) => {
+      console.log(e)
       e.preventDefault();
       popUpWindow.classList.add('showPopUp');
       renderPopUp(e.target.id);
