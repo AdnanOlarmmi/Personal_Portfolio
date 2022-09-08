@@ -701,7 +701,6 @@ footer {
     justify-content: center;
     align-items: flex-end;
     margin-top: 88rem;
-    border: 2px solid red;
   }
 
   .projects__item-name {
