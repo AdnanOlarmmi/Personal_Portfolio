@@ -8,16 +8,16 @@ const PopUntriggerEl = document.getElementsByClassName('Xpop');
 const seeProject = document.getElementsByClassName('seeProject');
 const projectdetails = [
   {
-    name: 'Multi-post story', description: 'Lorem Ipsum is simply dummy text of the printing and typesettingindustry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum i ssimply dummy text of theprinting and typesetting industry. Lorem Ipsum has been theindustry\'s standard dummy text ever since the 1500s, when an unknown Lorem Ipsum is simply dummy text of the printing andtypesetting industry. Lorem Ipsum has been the industry\'s standarddummy text ever since the 1500s, when an unknown printer took a galley of type and scramble.', featuredImage: 'images/ImgPlaceholder.svg', technologies: ['html', 'css', 'bootstrap', 'ruby'], linkLiveVersion: '', linkVersion: '',
+    name: 'Multi-post story', description: 'Lorem Ipsum is simply dummy text of the printing and typesettingindustry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum i ssimply dummy text of theprinting and typesetting industry.', featuredImage: 'images/ImgPlaceholder.svg', technologies: ['html', 'css', 'bootstrap', 'ruby'], linkLiveVersion: '', linkVersion: '',
   },
   {
-    name: 'Stories Story story', description: 'Lorem Ipsum is simply dummy text of the printing and typesettingindustry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum i ssimply dummy text of theprinting and typesetting industry. Lorem Ipsum has been theindustry\'s standard dummy text ever since the 1500s, when an unknown Lorem Ipsum is simply dummy text of the printing andtypesetting industry. Lorem Ipsum has been the industry\'s standarddummy text ever since the 1500s, when an unknown printer took a galley of type and scramble.', featuredImage: 'images/ImgPlaceholder.svg', technologies: ['html', 'css', 'bootstrap', 'ruby'], linkLiveVersion: '', linkVersion: '',
+    name: 'Stories Story story', description: 'Lorem Ipsum is simply dummy text of the printing and typesettingindustry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum i ssimply dummy text of theprinting and typesetting industry.', featuredImage: 'images/ImgPlaceholder.svg', technologies: ['html', 'css', 'bootstrap', 'ruby'], linkLiveVersion: '', linkVersion: '',
   },
   {
-    name: 'Story Stories story', description: 'Lorem Ipsum is simply dummy text of the printing and typesettingindustry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum i ssimply dummy text of theprinting and typesetting industry. Lorem Ipsum has been theindustry\'s standard dummy text ever since the 1500s, when an unknown Lorem Ipsum is simply dummy text of the printing andtypesetting industry. Lorem Ipsum has been the industry\'s standarddummy text ever since the 1500s, when an unknown printer took a galley of type and scramble.', featuredImage: 'images/ImgPlaceholder.svg', technologies: ['html', 'css', 'bootstrap', 'ruby'], linkLiveVersion: '', linkVersion: '',
+    name: 'Story Stories story', description: 'Lorem Ipsum is simply dummy text of the printing and typesettingindustry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum i ssimply dummy text of theprinting and typesetting industry.', featuredImage: 'images/ImgPlaceholder.svg', technologies: ['html', 'css', 'bootstrap', 'ruby'], linkLiveVersion: '', linkVersion: '',
   },
   {
-    name: 'Story Story stories', description: 'Adnan Ipsum is simply dummy text of the printing and typesettingindustry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum i ssimply dummy text of theprinting and typesetting industry. Lorem Ipsum has been theindustry\'s standard dummy text ever since the 1500s, when an unknown Lorem Ipsum is simply dummy text of the printing andtypesetting industry. Lorem Ipsum has been the industry\'s standarddummy text ever since the 1500s, when an unknown printer took a galley of type and scramble.', featuredImage: 'images/ImgPlaceholder.svg', technologies: ['html', 'css', 'bootstrap', 'ruby'], linkLiveVersion: '', linkVersion: '',
+    name: 'Story Story stories', description: 'Adnan Ipsum is simply dummy text of the printing and typesettingindustry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum i ssimply dummy text of theprinting and typesetting industry.', featuredImage: 'images/ImgPlaceholder.svg', technologies: ['html', 'css', 'bootstrap', 'ruby'], linkLiveVersion: '', linkVersion: '',
   },
 ];
 
@@ -102,7 +102,7 @@ const renderPopUp = (id) => {
 function togglePopUp() {
   for (let i = 0; i < seeProject.length; i += 1) {
     seeProject[i].addEventListener('click', (e) => {
-      e.preventDefault();
+      // e.preventDefault();
       popUpWindow.classList.add('showPopUp');
       renderPopUp(e.target.id);
     });
@@ -121,10 +121,7 @@ const renderProjectDetails = () => {
   <div class="projectDetails">
     <h2 class="projects__item-name">${elem.name}</h2>
     <p class="projects__item-details">
-      A daily selection of privately personalized reads; no accounts
-      or sign-ups required. has been the industry's standard dummy
-      text ever since the 1500s, when an unknown printer took a
-      standard dummy text.
+    ${elem.description}
     </p>
     <ul class="projects__item-language">
       <li class="projects__item-language-item">${elem.technologies[0]}</li>
@@ -152,3 +149,4 @@ const renderProjectDetails = () => {
 toggleNav();
 renderProjectDetails();
 togglePopUp();
+/////thisi

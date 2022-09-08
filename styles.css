@@ -516,8 +516,8 @@ footer {
 }
 
 .snapshoot {
-  width: auto;
-  height: 100px;
+  width: 300px;
+  height: 200px;
   margin: 11px auto;
 }
 
@@ -809,5 +809,7 @@ footer {
 
   .snapshoot {
     margin: 20px auto;
+    width: 30%;
+    height: 200rem;
   }
 }
