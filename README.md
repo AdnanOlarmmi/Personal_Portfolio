@@ -2,17 +2,18 @@
 
 # Project Name
 
-Is-haq Adnan's Personal Portfolio.
+Pop-up Window.
 
 > Description the project.
 
-A development about my developments.
+Implementing a pop-up window component in the portfolio to show up when certain projects are clicked.
 
 ## Built With
 
 - Major languages
   Html
   Css
+  JavaScript
 - Frameworks
   None
 - Technologies used

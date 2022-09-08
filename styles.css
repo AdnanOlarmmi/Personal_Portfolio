@@ -81,7 +81,6 @@ nav {
   font-size: 24px;
   color: #fff;
   position: absolute;
-  left: 750px;
   height: 100vh;
   width: 100%;
   background-color: #191765;
@@ -90,6 +89,7 @@ nav {
   background-repeat: no-repeat;
   transition: 0.3s all ease-in-out;
   background-size: 120vw 100%;
+  visibility: hidden;
 }
 
 .nav__items {
@@ -119,8 +119,6 @@ nav {
   align-self: flex-end;
   margin-right: 25px;
   margin-top: 3px;
-  position: relative;
-  right: 750px;
 }
 
 .X-Icon {
@@ -143,6 +141,11 @@ nav {
 
 .close {
   visibility: hidden;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
 }
 
 .sectionOne {
@@ -452,6 +455,70 @@ footer {
   align-items: center;
 }
 
+.popUpWindow {
+  color: #fff;
+  width: 500px;
+  height: max-content;
+  position: fixed;
+  top: 50%;
+  left: -50%;
+  transform: translate(-50%, -50%);
+  border: 2rem solid #fff;
+  background-color: rgba(255, 255, 255, 0.16);
+  padding: 50rem;
+  z-index: 9999999;
+  box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
+}
+
+.showPopUp {
+  left: 50%;
+}
+
+.popUpwindow__head {
+  justify-content: space-between;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 0;
+}
+
+.popUpWindow__text {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
+  text-align: center;
+  margin-bottom: 17px;
+  padding: 0;
+}
+
+.popUpWindow .projects__item-language {
+  width: 304px;
+  margin: 0 auto;
+}
+
+.popUpWindow .projects__item-language img {
+  border-left: 2px solid #81818c;
+  width: 0;
+}
+
+.popupWindow__button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.seeLive {
+  align-items: center;
+  gap: 12rem;
+}
+
+.snapshoot {
+  width: auto;
+  height: 100px;
+  margin: 11px auto;
+}
+
 @media only screen and (min-width: 768px) {
   body {
     width: 100vw;
@@ -504,6 +571,11 @@ footer {
 
   .sectionTwo img {
     width: 100%;
+  }
+
+  .seeLive {
+    align-items: center;
+    gap: 12rem;
   }
 
   .line {
@@ -576,6 +648,7 @@ footer {
     background-image: none;
     background-color: transparent;
     left: 0;
+    visibility: visible;
   }
 
   .workMobile {
@@ -641,8 +714,6 @@ footer {
   .imgPlaceholder {
     width: 684rem;
     height: 100%;
-    margin-left: 12rem;
-    margin-right: 12rem;
   }
 
   .projectDetails {
@@ -697,5 +768,45 @@ footer {
   #email {
     margin-top: -11rem;
     margin-left: 14rem;
+  }
+
+  .popUpWindow {
+    color: #fff;
+    width: 1156rem;
+    padding: 24rem;
+  }
+
+  .popUpwindow__head {
+    justify-content: space-between;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40rem;
+    line-height: 32rem;
+  }
+
+  .popUpWindow__text {
+    font-weight: 400;
+    font-size: 16rem;
+    line-height: 30rem;
+    text-align: center;
+    margin-bottom: 70rem;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+
+  .popUpWindow .projects__item-language {
+    width: 304rem;
+    margin: 0 auto;
+  }
+
+  .popupWindow__button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 78rem;
+  }
+
+  .snapshoot {
+    margin: 20px auto;
   }
 }
