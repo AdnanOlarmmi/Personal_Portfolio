@@ -109,6 +109,7 @@ function togglePopUp() {
   }
 }
 const form =;
+const formValidation =;
 const renderProjectDetails = () => {
   let markup = '';
   projectdetails.forEach((elem, index) => {
