@@ -108,6 +108,7 @@ function togglePopUp() {
     });
   }
 }
+const el=;
 const em =;
 const renderProjectDetails = () => {
   let markup = '';
