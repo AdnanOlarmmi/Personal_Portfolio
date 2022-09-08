@@ -35,7 +35,13 @@ function showNav() {
   navUntriggerEl.classList.add('open');
 }
 
-
+function toggleNav() {
+  navTriggerEl.addEventListener('click', showNav);
+  navUntriggerEl.addEventListener('click', hideNav);
+  navItems.forEach((item) => {
+    item.addEventListener('click', hideNav);
+  });
+}
 <<<<<<< Updated upstream
 
 const renderPopUp = (id) => {
