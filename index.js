@@ -108,7 +108,7 @@ function togglePopUp() {
     });
   }
 }
-
+const em =;
 const renderProjectDetails = () => {
   let markup = '';
   projectdetails.forEach((elem, index) => {
