@@ -150,4 +150,4 @@ const renderProjectDetails = () => {
 toggleNav();
 renderProjectDetails();
 togglePopUp();
-/////thisi
+toggleNav();

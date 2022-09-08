@@ -81,7 +81,6 @@ nav {
   font-size: 24px;
   color: #fff;
   position: absolute;
-  left: 750px;
   height: 100vh;
   width: 100%;
   background-color: #191765;
@@ -90,6 +89,7 @@ nav {
   background-repeat: no-repeat;
   transition: 0.3s all ease-in-out;
   background-size: 120vw 100%;
+  visibility: hidden;
 }
 
 .nav__items {
@@ -119,8 +119,6 @@ nav {
   align-self: flex-end;
   margin-right: 25px;
   margin-top: 3px;
-  position: relative;
-  right: 750px;
 }
 
 .X-Icon {
@@ -650,6 +648,7 @@ footer {
     background-image: none;
     background-color: transparent;
     left: 0;
+    visibility: visible;
   }
 
   .workMobile {
