@@ -2,11 +2,11 @@
 
 # Project Name
 
-Pop-up Window.
+Form Validation.
 
 > Description the project.
 
-Implementing a pop-up window component in the portfolio to show up when certain projects are clicked.
+Validating user's email input to check if it's lower case using the client side validation method.
 
 ## Built With
 
