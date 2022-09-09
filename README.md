@@ -51,13 +51,17 @@ Install node
 
 👤 **Author1**
 
+👤 **Is-haq Adnan Olamilekan**
+
 - GitHub: [@AdnanOlarmmi](https://github.com/adnanolarmmi)
 - Twitter: [@AdnanIs71755510](https://twitter.com/AdnanIs71755510)
 - LinkedIn: [Adnan (Olamilekan) Is-haq](https://linkedin.com/in/adnan-is-haq-olamilekan)
 
 👤 **Author2**
 
-Joel Kugonza
+👤 **Joel Kugonza**
+
+- GitHub: [@Joel-100](https://github.com/Joel-100)
 
 ## 🤝 Contributing
 
