@@ -8,7 +8,10 @@ const PopUntriggerEl = document.getElementsByClassName('Xpop');
 const seeProject = document.getElementsByClassName('seeProject');
 const submitButtonEl = document.querySelector('#btm-btn');
 const errorMessage = document.querySelector('.errorMSG');
+const form = document.querySelector('form');
+const nameEl = document.querySelector('.name');
 const eMailEl = document.querySelector('.email');
+const textEl = document.querySelector('.text');
 const projectdetails = [
   {
     name: 'Multi-post story', description: 'Lorem Ipsum is simply dummy text of the printing and typesettingindustry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum i ssimply dummy text of theprinting and typesetting industry.', featuredImage: 'images/ImgPlaceholder.svg', technologies: ['html', 'css', 'bootstrap', 'ruby'], linkLiveVersion: '', linkVersion: '',
@@ -105,14 +108,12 @@ const renderPopUp = (id) => {
 function togglePopUp() {
   for (let i = 0; i < seeProject.length; i += 1) {
     seeProject[i].addEventListener('click', (e) => {
-      // e.preventDefault();
       popUpWindow.classList.add('showPopUp');
       renderPopUp(e.target.id);
     });
   }
 }
-const el=;
-const em =;
+
 const renderProjectDetails = () => {
   let markup = '';
   projectdetails.forEach((elem, index) => {
@@ -161,8 +162,30 @@ const formValidation = () => {
     }
   });
 };
+
+const formClick = () => {
+  function formInfo() {
+    const formData = {
+      name: nameEl.value,
+      email: eMailEl.value,
+      text: textEl.value,
+    };
+    const formDataSerialized = JSON.stringify(formData);
+    localStorage.setItem('form', formDataSerialized);
+  }
+  form.addEventListener('keyup', formInfo);
+};
+
+window.addEventListener('load', () => {
+  const formDataDeserialized = JSON.parse(localStorage.getItem('form'));
+  nameEl.value = formDataDeserialized.name;
+  eMailEl.value = formDataDeserialized.email;
+  textEl.value = formDataDeserialized.text;
+});
+
 toggleNav();
 renderProjectDetails();
 togglePopUp();
 toggleNav();
 formValidation();
+formClick();

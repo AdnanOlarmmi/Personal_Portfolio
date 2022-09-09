@@ -57,14 +57,6 @@ Install node
 
 👤 **Author2**
 
-Selma Ndapanda Hamutenya
-
-👤 **Author2**
-
-Olubukky Grace Attitebi
-
-👤 **Author4**
-
 Joel Kugonza
 
 ## 🤝 Contributing
