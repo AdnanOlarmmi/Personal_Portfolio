@@ -81,7 +81,6 @@ nav {
   font-size: 24px;
   color: #fff;
   position: absolute;
-  left: 750px;
   height: 100vh;
   width: 100%;
   background-color: #191765;
@@ -90,6 +89,7 @@ nav {
   background-repeat: no-repeat;
   transition: 0.3s all ease-in-out;
   background-size: 120vw 100%;
+  visibility: hidden;
 }
 
 .nav__items {
@@ -119,8 +119,6 @@ nav {
   align-self: flex-end;
   margin-right: 25px;
   margin-top: 3px;
-  position: relative;
-  right: 750px;
 }
 
 .X-Icon {
@@ -342,7 +340,7 @@ ul {
   font-size: 15px;
 }
 
-.seeProject {
+.button {
   text-decoration: none;
   cursor: pointer;
   padding: 12px;
@@ -356,11 +354,11 @@ ul {
   transition: all 0.35s ease-in-out;
 }
 
-.seeProject:hover {
+.button:hover {
   box-shadow: 0 8px 16px rgba(125, 115, 252, 0.48);
 }
 
-.seeProject:disabled {
+.button:disabled {
   background: #2a2b33;
 }
 
@@ -436,6 +434,10 @@ textarea::placeholder {
 
 #btm-btn {
   margin: 0 auto 39px;
+}
+
+.errorMSG {
+  color: red;
 }
 
 #email {
@@ -516,8 +518,8 @@ footer {
 }
 
 .snapshoot {
-  width: auto;
-  height: 100px;
+  width: 300px;
+  height: 200px;
   margin: 11px auto;
 }
 
@@ -650,6 +652,7 @@ footer {
     background-image: none;
     background-color: transparent;
     left: 0;
+    visibility: visible;
   }
 
   .workMobile {
@@ -736,7 +739,7 @@ footer {
     font-size: 15rem;
   }
 
-  .seeProject {
+  .button {
     padding: 12rem;
     font-size: 12rem;
     line-height: 24rem;
@@ -809,5 +812,7 @@ footer {
 
   .snapshoot {
     margin: 20px auto;
+    width: 30%;
+    height: 200rem;
   }
 }

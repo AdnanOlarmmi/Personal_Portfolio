@@ -2,17 +2,18 @@
 
 # Project Name
 
-Is-haq Adnan's Personal Portfolio.
+Form Validation.
 
 > Description the project.
 
-A development about my developments.
+Validating user's email input to check if it's lower case using the client side validation method.
 
 ## Built With
 
 - Major languages
   Html
   Css
+  JavaScript
 - Frameworks
   None
 - Technologies used
