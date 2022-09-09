@@ -7,7 +7,7 @@ const projects = document.querySelector('.projects');
 const PopUntriggerEl = document.getElementsByClassName('Xpop');
 const seeProject = document.getElementsByClassName('seeProject');
 const submitButtonEl = document.querySelector('#btm-btn');
-const errorMessage =document.querySelector('.errorMSG');
+const errorMessage = document.querySelector('.errorMSG');
 const eMailEl = document.querySelector('.email');
 const projectdetails = [
   {
@@ -150,19 +150,18 @@ const renderProjectDetails = () => {
   projects.innerHTML = markup;
 };
 
-const formValidation = (id) => {
+const formValidation = () => {
   submitButtonEl.addEventListener('click', (e) => {
-    if(eMailEl.value!==eMailEl.value.toLowerCase()){
-       e.preventDefault();
-       errorMessage.innerHTML = "The email should be in lowercase";
+    if (eMailEl.value !== eMailEl.value.toLowerCase()) {
+      e.preventDefault();
+      errorMessage.innerHTML = 'The email should be in lowercase';
+    } else {
+      errorMessage.innerHTML = '';
     }
-    else{
-      errorMessage.innerHTML = "";
-    }
-  })
-}
+  });
+};
 toggleNav();
 renderProjectDetails();
 togglePopUp();
 toggleNav();
-formValidation()
+formValidation();
