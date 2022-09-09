@@ -6,18 +6,21 @@ const popUpWindow = document.querySelector('.popUpWindow');
 const projects = document.querySelector('.projects');
 const PopUntriggerEl = document.getElementsByClassName('Xpop');
 const seeProject = document.getElementsByClassName('seeProject');
+const submitButtonEl = document.querySelector('#btm-btn');
+const errorMessage = document.querySelector('.errorMSG');
+const eMailEl = document.querySelector('.email');
 const projectdetails = [
   {
-    name: 'Multi-post story', description: 'Lorem Ipsum is simply dummy text of the printing and typesettingindustry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum i ssimply dummy text of theprinting and typesetting industry. Lorem Ipsum has been theindustry\'s standard dummy text ever since the 1500s, when an unknown Lorem Ipsum is simply dummy text of the printing andtypesetting industry. Lorem Ipsum has been the industry\'s standarddummy text ever since the 1500s, when an unknown printer took a galley of type and scramble.', featuredImage: 'images/ImgPlaceholder.svg', technologies: ['html', 'css', 'bootstrap', 'ruby'], linkLiveVersion: '', linkVersion: '',
+    name: 'Multi-post story', description: 'Lorem Ipsum is simply dummy text of the printing and typesettingindustry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum i ssimply dummy text of theprinting and typesetting industry.', featuredImage: 'images/ImgPlaceholder.svg', technologies: ['html', 'css', 'bootstrap', 'ruby'], linkLiveVersion: '', linkVersion: '',
   },
   {
-    name: 'Stories Story story', description: 'Lorem Ipsum is simply dummy text of the printing and typesettingindustry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum i ssimply dummy text of theprinting and typesetting industry. Lorem Ipsum has been theindustry\'s standard dummy text ever since the 1500s, when an unknown Lorem Ipsum is simply dummy text of the printing andtypesetting industry. Lorem Ipsum has been the industry\'s standarddummy text ever since the 1500s, when an unknown printer took a galley of type and scramble.', featuredImage: 'images/ImgPlaceholder.svg', technologies: ['html', 'css', 'bootstrap', 'ruby'], linkLiveVersion: '', linkVersion: '',
+    name: 'Stories Story story', description: 'Lorem Ipsum is simply dummy text of the printing and typesettingindustry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum i ssimply dummy text of theprinting and typesetting industry.', featuredImage: 'images/ImgPlaceholder.svg', technologies: ['html', 'css', 'bootstrap', 'ruby'], linkLiveVersion: '', linkVersion: '',
   },
   {
-    name: 'Story Stories story', description: 'Lorem Ipsum is simply dummy text of the printing and typesettingindustry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum i ssimply dummy text of theprinting and typesetting industry. Lorem Ipsum has been theindustry\'s standard dummy text ever since the 1500s, when an unknown Lorem Ipsum is simply dummy text of the printing andtypesetting industry. Lorem Ipsum has been the industry\'s standarddummy text ever since the 1500s, when an unknown printer took a galley of type and scramble.', featuredImage: 'images/ImgPlaceholder.svg', technologies: ['html', 'css', 'bootstrap', 'ruby'], linkLiveVersion: '', linkVersion: '',
+    name: 'Story Stories story', description: 'Lorem Ipsum is simply dummy text of the printing and typesettingindustry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum i ssimply dummy text of theprinting and typesetting industry.', featuredImage: 'images/ImgPlaceholder.svg', technologies: ['html', 'css', 'bootstrap', 'ruby'], linkLiveVersion: '', linkVersion: '',
   },
   {
-    name: 'Story Story stories', description: 'Adnan Ipsum is simply dummy text of the printing and typesettingindustry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum i ssimply dummy text of theprinting and typesetting industry. Lorem Ipsum has been theindustry\'s standard dummy text ever since the 1500s, when an unknown Lorem Ipsum is simply dummy text of the printing andtypesetting industry. Lorem Ipsum has been the industry\'s standarddummy text ever since the 1500s, when an unknown printer took a galley of type and scramble.', featuredImage: 'images/ImgPlaceholder.svg', technologies: ['html', 'css', 'bootstrap', 'ruby'], linkLiveVersion: '', linkVersion: '',
+    name: 'Story Story stories', description: 'Adnan Ipsum is simply dummy text of the printing and typesettingindustry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum i ssimply dummy text of theprinting and typesetting industry.', featuredImage: 'images/ImgPlaceholder.svg', technologies: ['html', 'css', 'bootstrap', 'ruby'], linkLiveVersion: '', linkVersion: '',
   },
 ];
 
@@ -82,10 +85,10 @@ const renderPopUp = (id) => {
     </li>
   </ul>
   <div class="popupWindow__button flex-row">
-    <a href="#" class="seeProject seeLive flex-row"
+    <a href="#" class="button seeLive flex-row"
       >See Live <img src="images/Seelive.svg" alt="Golive"
     /></a>
-    <a href="#" class="seeProject flex-row seeLive"
+    <a href="#" class="button flex-row seeLive"
       >See Source
       <img src="images/Icons/Vectorgithubicon.svg" alt="githubIcon"
     /></a>
@@ -102,7 +105,7 @@ const renderPopUp = (id) => {
 function togglePopUp() {
   for (let i = 0; i < seeProject.length; i += 1) {
     seeProject[i].addEventListener('click', (e) => {
-      e.preventDefault();
+      // e.preventDefault();
       popUpWindow.classList.add('showPopUp');
       renderPopUp(e.target.id);
     });
@@ -121,10 +124,7 @@ const renderProjectDetails = () => {
   <div class="projectDetails">
     <h2 class="projects__item-name">${elem.name}</h2>
     <p class="projects__item-details">
-      A daily selection of privately personalized reads; no accounts
-      or sign-ups required. has been the industry's standard dummy
-      text ever since the 1500s, when an unknown printer took a
-      standard dummy text.
+    ${elem.description}
     </p>
     <ul class="projects__item-language">
       <li class="projects__item-language-item">${elem.technologies[0]}</li>
@@ -142,14 +142,26 @@ const renderProjectDetails = () => {
       </li>
       <li class="projects__item-language-item">${elem.technologies[3]}</li>
     </ul>
-    <a href="#" class="seeProject" id=${index}>See project</a>
+    <a href="#" class="seeProject button" id=${index}>See project</a>
   </div>
 </div>`;
   });
 
   projects.innerHTML = markup;
 };
+
+const formValidation = () => {
+  submitButtonEl.addEventListener('click', (e) => {
+    if (eMailEl.value !== eMailEl.value.toLowerCase()) {
+      e.preventDefault();
+      errorMessage.innerHTML = `The email should be in lowercase (${eMailEl.value.toLowerCase()})`;
+    } else {
+      errorMessage.innerHTML = '';
+    }
+  });
+};
 toggleNav();
 renderProjectDetails();
 togglePopUp();
 toggleNav();
+formValidation();
