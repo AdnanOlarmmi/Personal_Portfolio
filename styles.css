@@ -340,7 +340,7 @@ ul {
   font-size: 15px;
 }
 
-.seeProject {
+.button {
   text-decoration: none;
   cursor: pointer;
   padding: 12px;
@@ -354,11 +354,11 @@ ul {
   transition: all 0.35s ease-in-out;
 }
 
-.seeProject:hover {
+.button:hover {
   box-shadow: 0 8px 16px rgba(125, 115, 252, 0.48);
 }
 
-.seeProject:disabled {
+.button:disabled {
   background: #2a2b33;
 }
 
@@ -434,6 +434,10 @@ textarea::placeholder {
 
 #btm-btn {
   margin: 0 auto 39px;
+}
+
+.errorMSG {
+  color: red;
 }
 
 #email {
@@ -735,7 +739,7 @@ footer {
     font-size: 15rem;
   }
 
-  .seeProject {
+  .button {
     padding: 12rem;
     font-size: 12rem;
     line-height: 24rem;

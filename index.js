@@ -6,6 +6,9 @@ const popUpWindow = document.querySelector('.popUpWindow');
 const projects = document.querySelector('.projects');
 const PopUntriggerEl = document.getElementsByClassName('Xpop');
 const seeProject = document.getElementsByClassName('seeProject');
+const submitButtonEl = document.querySelector('#btm-btn');
+const errorMessage =document.querySelector('.errorMSG');
+const eMailEl = document.querySelector('.email');
 const projectdetails = [
   {
     name: 'Multi-post story', description: 'Lorem Ipsum is simply dummy text of the printing and typesettingindustry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum i ssimply dummy text of theprinting and typesetting industry.', featuredImage: 'images/ImgPlaceholder.svg', technologies: ['html', 'css', 'bootstrap', 'ruby'], linkLiveVersion: '', linkVersion: '',
@@ -82,10 +85,10 @@ const renderPopUp = (id) => {
     </li>
   </ul>
   <div class="popupWindow__button flex-row">
-    <a href="#" class="seeProject seeLive flex-row"
+    <a href="#" class="button seeLive flex-row"
       >See Live <img src="images/Seelive.svg" alt="Golive"
     /></a>
-    <a href="#" class="seeProject flex-row seeLive"
+    <a href="#" class="button flex-row seeLive"
       >See Source
       <img src="images/Icons/Vectorgithubicon.svg" alt="githubIcon"
     /></a>
@@ -108,8 +111,7 @@ function togglePopUp() {
     });
   }
 }
-const form =;
-const formValidation =;
+
 const renderProjectDetails = () => {
   let markup = '';
   projectdetails.forEach((elem, index) => {
@@ -140,14 +142,27 @@ const renderProjectDetails = () => {
       </li>
       <li class="projects__item-language-item">${elem.technologies[3]}</li>
     </ul>
-    <a href="#" class="seeProject" id=${index}>See project</a>
+    <a href="#" class="seeProject button" id=${index}>See project</a>
   </div>
 </div>`;
   });
 
   projects.innerHTML = markup;
 };
+
+const formValidation = (id) => {
+  submitButtonEl.addEventListener('click', (e) => {
+    if(eMailEl.value!==eMailEl.value.toLowerCase()){
+       e.preventDefault();
+       errorMessage.innerHTML = "The email should be in lowercase";
+    }
+    else{
+      errorMessage.innerHTML = "";
+    }
+  })
+}
 toggleNav();
 renderProjectDetails();
 togglePopUp();
 toggleNav();
+formValidation()
