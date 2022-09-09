@@ -2,11 +2,11 @@
 
 # Project Name
 
-Form Validation.
+Browser's Local storage
 
 > Description the project.
 
-Validating user's email input to check if it's lower case using the client side validation method.
+Storing user data in the local storage to make it available on reload.
 
 ## Built With
 
