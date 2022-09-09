@@ -154,7 +154,7 @@ const formValidation = () => {
   submitButtonEl.addEventListener('click', (e) => {
     if (eMailEl.value !== eMailEl.value.toLowerCase()) {
       e.preventDefault();
-      errorMessage.innerHTML = 'The email should be in lowercase';
+      errorMessage.innerHTML = `The email should be in lowercase (${eMailEl.value.toLowerCase()})`;
     } else {
       errorMessage.innerHTML = '';
     }
