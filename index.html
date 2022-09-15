@@ -8,26 +8,68 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="styles.css" />
 	</head>
-	<body>
-		<div class="container">
-			<div class="hero-container">
+	<body class="flex-column">
+		<div class="container flex-column">
+			<div class="hero-container flex-column">
 				<header>
 					<a class="nav__icon" href="#">Adnan Is-haq</a>
-
-					<nav class="burger"><img src="images/Union.svg" alt="" /></nav>
+					<nav class="nav flex-column">
+						<img src="images/Union.svg" class="burger" alt="burgerIcon" />
+						<img src="images/X-Icon.svg" class="X-Icon" alt="X-Icon" />
+						<ul class="nav__items">
+							<li class="nav__item">
+								<a href="#">Home</a
+								><img
+									class="breadCrumb"
+									src="images/LargergreaterThanIcon.svg"
+									alt="breadCrumb"
+								/>
+							</li>
+							<li class="nav__item">
+								<a href="#portfolio">Portfolio</a
+								><img
+									class="breadCrumb"
+									src="images/LargergreaterThanIcon.svg"
+									alt="breadCrumb"
+								/>
+							</li>
+							<li class="nav__item">
+								<a href="#about">About</a
+								><img
+									class="breadCrumb"
+									src="images/LargergreaterThanIcon.svg"
+									alt="breadCrumb"
+								/>
+							</li>
+							<li class="nav__item">
+								<a href="#contact">Contact</a
+								><img
+									class="breadCrumb"
+									src="images/LargergreaterThanIcon.svg"
+									alt="breadCrumb"
+								/>
+							</li>
+							<li class="nav__item">
+								<img src="images/emailIcon.svg" alt="emailIcon" />
+							</li>
+						</ul>
+					</nav>
 				</header>
-				<main>
-					<section class="sectionOne">
-						<h1 id="section__ownerName">Adnan Is-haq</h1>
+				<main class="flex-column">
+					<section class="sectionOne flex-column">
+						<h1 id="section__ownerName">
+							<span id="about">Adnan Is-haq</span>
+						</h1>
 						<h2 id="section__ownerRole">Software Developer</h2>
+					</section>
+					<div class="popUpWindow flex-column"></div>
+					<section class="sectionTwo flex-column">
 						<p id="section__ownerAbout">
 							I can help you build a product, feature or website Look through
 							some of my work and experience! If you like what you see and have
 							a project you need coded, don’t hestiate to contact me.
 						</p>
-					</section>
-					<section class="sectionTwo">
-						<img src="images/Vector4.svg" alt="" />
+						<img src="images/Vector4.svg" alt="line" />
 						<div class="sectionTwoDiv">
 							<div class="sectionTwoChild sectionTwo__languages">
 								<p class="sectionTwo__languages__topic language">Language</p>
@@ -59,166 +101,73 @@
 								</ul>
 							</div>
 						</div>
-						<img src="images/Vector4.svg" alt="" />
+						<img src="images/Vector4.svg" alt="line" />
 					</section>
 					<ul class="contactsIcon">
-						<li><img src="images/Icons/Vectorgithubicon.svg" alt="" /></li>
-						<li><img src="images/Icons/Grouplinkedinicon.svg" alt="" /></li>
-						<li><img src="images/Icons/Vectorfinger.svg" alt="" /></li>
-						<li><img src="images/Icons/Vectortwittericon.svg" alt="" /></li>
-						<li><img src="images/Icons/VectorMicon.svg" alt="" /></li>
+						<li id="work1">
+							<div class="workDesktop">
+								<span>Work</span>&nbsp;&nbsp;
+								<img class="arrow" src="images/Group55.svg" alt="arrow" />
+							</div>
+						</li>
+						<li>
+							<img src="images/Icons/Vectorgithubicon.svg" alt="githubIcon" />
+						</li>
+						<li>
+							<img
+								src="images/Icons/Grouplinkedinicon.svg"
+								alt="linkedinIcon"
+							/>
+						</li>
+						<li>
+							<img src="images/Icons/Vectorfinger.svg" alt="fingerIcon" />
+						</li>
+						<li>
+							<img src="images/Icons/Vectortwittericon.svg" alt="twitterIcon" />
+						</li>
+						<li><img src="images/Icons/VectorMicon.svg" alt="Micon" /></li>
+						<li id="work2">
+							<div class="workDesktop">
+								<img
+									class="arrow"
+									src="images/Group55.svg"
+									alt="arrow"
+								/>&nbsp;&nbsp;<span>Work</span>
+							</div>
+						</li>
 					</ul>
 				</main>
 			</div>
-			<div class="projects-container">
-				<div class="work">
-					<img id="arrow" src="images/Group55.svg" alt="" />&nbsp;&nbsp;<span
-						id="work"
-						>Work</span
-					>
+			<div class="projects-container flex-column">
+				<div class="workMobile">
+					<img
+						id="arrow"
+						src="images/Group55.svg"
+						alt="arrow"
+					/>&nbsp;&nbsp;<span id="work">Work</span>
 				</div>
-				<p id="myrecentwork">MY RECENT WORK</p>
-				<img class="line" src="images/Vector4.svg" alt="" />
-				<div class="projects">
-					<div class="projects__item">
-						<img
-							class="imgPlaceholder"
-							src="images/ImgPlaceholder.svg"
-							alt=""
-						/>
-						<h2 class="projects__item-name">Multi-post stories</h2>
-						<p class="projects__item-details">
-							A daily selection of privately personalized reads; no accounts or
-							sign-ups required. has been the industry's standard dummy text
-							ever since the 1500s, when an unknown printer took a standard
-							dummy text.
-						</p>
-						<ul class="projects__item-language">
-							<li class="projects__item-language-item">css</li>
-							<li>
-								<img src="images/Rectangle.svg" alt="" />
-							</li>
-
-							<li class="projects__item-language-item">html</li>
-							<li>
-								<img src="images/Rectangle.svg" alt="" />
-							</li>
-							<li class="projects__item-language-item">bootstrap</li>
-							<li>
-								<img src="images/Rectangle.svg" alt="" />
-							</li>
-							<li class="projects__item-language-item">Ruby</li>
-						</ul>
-						<a href="#" class="seeProject">See project</a>
-					</div>
-					<div class="projects__item">
-						<img
-							class="imgPlaceholder"
-							src="images/ImgPlaceholder.svg"
-							alt=""
-						/>
-						<h2 class="projects__item-name">Multi-post stories</h2>
-						<p class="projects__item-details">
-							A daily selection of privately personalized reads; no accounts or
-							sign-ups required. has been the industry's standard dummy text
-							ever since the 1500s, when an unknown printer took a standard
-							dummy text.
-						</p>
-						<ul class="projects__item-language">
-							<li class="projects__item-language-item">css</li>
-							<li>
-								<img src="images/Rectangle.svg" alt="" />
-							</li>
-
-							<li class="projects__item-language-item">html</li>
-							<li>
-								<img src="images/Rectangle.svg" alt="" />
-							</li>
-							<li class="projects__item-language-item">bootstrap</li>
-							<li>
-								<img src="images/Rectangle.svg" alt="" />
-							</li>
-							<li class="projects__item-language-item">Ruby</li>
-						</ul>
-						<a href="#" class="seeProject">See project</a>
-					</div>
-					<div class="projects__item">
-						<img
-							class="imgPlaceholder"
-							src="images/ImgPlaceholder.svg"
-							alt=""
-						/>
-						<h2 class="projects__item-name">Multi-post stories</h2>
-						<p class="projects__item-details">
-							A daily selection of privately personalized reads; no accounts or
-							sign-ups required. has been the industry's standard dummy text
-							ever since the 1500s, when an unknown printer took a standard
-							dummy text.
-						</p>
-						<ul class="projects__item-language">
-							<li class="projects__item-language-item">css</li>
-							<li>
-								<img src="images/Rectangle.svg" alt="" />
-							</li>
-
-							<li class="projects__item-language-item">html</li>
-							<li>
-								<img src="images/Rectangle.svg" alt="" />
-							</li>
-							<li class="projects__item-language-item">bootstrap</li>
-							<li>
-								<img src="images/Rectangle.svg" alt="" />
-							</li>
-							<li class="projects__item-language-item">Ruby</li>
-						</ul>
-						<a href="#" class="seeProject">See project</a>
-					</div>
-					<div class="projects__item">
-						<img
-							class="imgPlaceholder"
-							src="images/ImgPlaceholder.svg"
-							alt=""
-						/>
-						<h2 class="projects__item-name">Multi-post stories</h2>
-						<p class="projects__item-details">
-							A daily selection of privately personalized reads; no accounts or
-							sign-ups required. has been the industry's standard dummy text
-							ever since the 1500s, when an unknown printer took a standard
-							dummy text.
-						</p>
-						<ul class="projects__item-language">
-							<li class="projects__item-language-item">css</li>
-							<li>
-								<img src="images/Rectangle.svg" alt="" />
-							</li>
-
-							<li class="projects__item-language-item">html</li>
-							<li>
-								<img src="images/Rectangle.svg" alt="" />
-							</li>
-							<li class="projects__item-language-item">bootstrap</li>
-							<li>
-								<img src="images/Rectangle.svg" alt="" />
-							</li>
-							<li class="projects__item-language-item">Ruby</li>
-						</ul>
-						<a href="#" class="seeProject">See project</a>
-					</div>
-				</div>
-				<div class="about">
+				<p id="myrecentwork"><span id="portfolio"></span> my recent work</p>
+				<img class="line" src="images/Vector4.svg" alt="line" />
+				<div class="projects"></div>
+				<div class="about flex-column" id="contact">
 					<h2 id="about__contactUs">CONTACT US</h2>
 					<p id="about__needHelp">
 						If you have an application you are interested in developing, a
 						feature that you need built or a project that needs coding. I’d love
 						to help with it
 					</p>
-					<form action="https://formspree.io/f/mbjqvypj" method="post">
+					<form
+						action="https://formspree.io/f/mbjqvypj"
+						method="post"
+						class="flex-column"
+					>
 						<div class="input">
 							<input
 								type="text"
 								name="name"
 								placeholder="Text Input"
 								maxlength="30"
+								class="name"
 								required
 							/>
 						</div>
@@ -227,6 +176,7 @@
 								type="email"
 								name="email"
 								placeholder="jeremy@gmail.com"
+								class="email"
 								required
 							/>
 						</div>
@@ -234,24 +184,48 @@
 							<textarea
 								name="comment"
 								placeholder="Enter text here"
+								class="text"
 								cols="30"
 								rows="10"
 								maxlength="500"
 								required
 							></textarea>
 						</div>
-						<input type="submit" value="See project" class="seeProject" id="btm-btn" />
+						<input
+							type="submit"
+							value="See project"
+							class="button"
+							id="btm-btn"
+						/>
+						<p class="errorMSG"></p>
 					</form>
-					<ul class="contactsIcon">
-						<li><img src="images/Icons/Vectorgithubicon.svg" alt="" /></li>
-						<li><img src="images/Icons/Grouplinkedinicon.svg" alt="" /></li>
-						<li><img src="images/Icons/Vectorfinger.svg" alt="" /></li>
-						<li><img src="images/Icons/Vectortwittericon.svg" alt="" /></li>
-						<li><img src="images/Icons/VectorMicon.svg" alt="" /></li>
-					</ul>
-					<a href="#" id="email">emailhere@email.com</a>
+					<footer class="flex-column">
+						<ul class="contactsIcon fIcon">
+							<li>
+								<img src="images/Icons/Vectorgithubicon.svg" alt="githubIcon" />
+							</li>
+							<li>
+								<img
+									src="images/Icons/Grouplinkedinicon.svg"
+									alt="linkedinIcon"
+								/>
+							</li>
+							<li>
+								<img src="images/Icons/Vectorfinger.svg" alt="fingerIcon" />
+							</li>
+							<li>
+								<img
+									src="images/Icons/Vectortwittericon.svg"
+									alt="twitterIcon"
+								/>
+							</li>
+							<li><img src="images/Icons/VectorMicon.svg" alt="Micon" /></li>
+						</ul>
+						<a href="#" id="email">emailhere@gmail.com</a>
+					</footer>
 				</div>
 			</div>
 		</div>
+		<script src="index.js"></script>
 	</body>
 </html>
