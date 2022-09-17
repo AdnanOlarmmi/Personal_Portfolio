@@ -7,9 +7,9 @@ This is a development about my developments
 
 > |     | Mobile version                      | Desktop version                      |     |
 > | --- | ----------------------------------- | ------------------------------------ | --- |
-> |     | ![Screenshot1](./images/screenshots/mobile.png) | ![Screenshot2](./images/screenshots/desktop.png) |
+> |     | ![Screenshot1](./images/portfolioM.png) | ![Screenshot2](./images/portfolioD.png) |
 
-This project is to put to test the understanding of individual student on what they've studied so far from the curriculum's module 1.
+This stands for me in my absence
 
 > Learning objectives
 
