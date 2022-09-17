@@ -115,7 +115,7 @@ npx eslint .
 
 ## Credits
 
-- The original design ideal by Microverse [Microverse⭐️](https://www.figma.com/file/l7SqJ3ZfkAKih9sFxvWSR4/Microverse-Student-Project-1?node-id=23%3A10)
+- The original design ideal [Microverse💕](https://www.figma.com/file/l7SqJ3ZfkAKih9sFxvWSR4/Microverse-Student-Project-1?node-id=23%3A10)
 - Project from [Microverse](https://bit.ly/MicroverseTN) html & css module
 - Images inspired by [Unsplash](unsplash.com)
 
