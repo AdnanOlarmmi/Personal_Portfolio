@@ -1,80 +1,140 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Is-haq Adnan's Portfolio
 
-Form Validation.
+This is a development about my developments
+- Here is the page preview
 
-> Description the project.
+> |     | Mobile version                      | Desktop version                      |     |
+> | --- | ----------------------------------- | ------------------------------------ | --- |
+> |     | ![Screenshot1](./images/portfolioM.png) | ![Screenshot2](./images/portfolioD.png) |
 
-Validating user's email input to check if it's lower case using the client side validation method.
+This represents me in my absence
+
+> Learning objectives
+
+- I Used semantic HTML tags.
+- I Applied best practices in HTML code.
+- Used CSS selectors correctly.
+- Used CSS box model.
+- Used Flexbox to place elements on the page.
+- Demonstrated ability to create UIs adaptable to different screen sizes using media queries.
+- Used GitHub Pages to deploy web pages.
+- Applied JavaScript best practices and language style guides in code.
+- Used JavaScript to manipulate DOM elements.
+- Used JavaScript events.
+- Used objects to store and access data.
+- Communicated technical concepts to other technical people.
 
 ## Built With
 
-- Major languages
-  Html
-  Css
-  JavaScript
-- Frameworks
-  None
-- Technologies used
-  Linters
-  Node packet manager
+- HTML
+- CSS
+- JAVASCRIPT
+
+Click [here](https://www.loom.com/share/1b0968f84b46450fa426ca8cf6bd0d68) to watch a walk-through description, given by me.
+
+## Additional Tools
+
+- WebHint
+- Stylelint
+- ESlint
+- Node Packet Manager
 
 ## Live Demo
 
-[Acces The live Demo Here](https://adnanolarmmi.github.io/Personal_Portfolio/)
+[Here](https://adnanolarmmi.github.io/Personal_Portfolio/) is the live demo.
 
-To get a local copy up and running follow these simple example steps.
+## Getting Started
 
-From the repository, select the Clone button.
-
-Copy the clone command (either the SSH format or the HTTPS).
-If you are using the SSH protocol, ensure your public key is in Bitbucket and loaded on the local system to which you are cloning.
-
-From a terminal window, change to the local directory where you want to clone your repository.
-
-Paste the command you copied
+To get a local copy of this project up and running on your local machine follow the steps below.
 
 ### Prerequisites
 
-Basic Knowledge of html, css and linters and npm
+- Basic html, css and medium Javascript know how.
+- Git installation
+- A text editor 
+- A terminal
+- A web browser to view output e.g Google Chrome
+- An IDE e.g Visual studio code
 
 ### Setup
 
-Visual studio code
+- Clone this repository or download the Zip folder:
 
-### Install
+```
+git clone https://github.com/AdnanOlarmmi/Personal_Portfolio.git
+```
 
-Install node
+- Navigate to the location of the folder in your machine:
 
-## Authors
+**``you@your-Pc-name:~$ cd <folder>``**
 
-👤 **Author1**
+### Usage
 
+- After Cloning this repo to your local machine
+- Open the `index.html` in your browser
+
+### Run Tests
+To track linter errors locally follow these steps:  
+
+Download all the dependencies run:
+```
+npm install
+```
+Track HTML linter errors run:
+```
+npx hint .
+```
+Track CSS linter errors run:
+```
+npx stylelint "**/*.{css,scss}"
+```
+Track JavaScript linter errors run:
+```
+npx eslint .
+```
+
+### Deployment
+
+- I used GitHub Pages to deploy my website
+- For more information about publishing sources, see "[About github page](https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages#publishing-sources-for-github-pages-sites)"
+
+## Author
+### 👤 Author 1
 👤 **Is-haq Adnan Olamilekan**
 
 - GitHub: [@AdnanOlarmmi](https://github.com/adnanolarmmi)
 - Twitter: [@AdnanIs71755510](https://twitter.com/AdnanIs71755510)
 - LinkedIn: [Adnan (Olamilekan) Is-haq](https://linkedin.com/in/adnan-is-haq-olamilekan)
 
-👤 **Author2**
+### 👤 Author 2
+👤 **Joel Kugoza**
 
-👤 **Joel Kugonza**
+-GitHub @joel-100
 
-- GitHub: [@Joel-100](https://github.com/Joel-100)
+## Credits
 
-## 🤝 Contributing
+- The original design ideal [Microverse💕](https://www.figma.com/file/l7SqJ3ZfkAKih9sFxvWSR4/Microverse-Student-Project-1?node-id=23%3A10)
+- Project from [Microverse](https://bit.ly/MicroverseTN) html & css module
+- Images inspired by [Unsplash](unsplash.com)
+
+## Contributing
 
 Contributions, issues, and feature requests are welcome!
+Feel free to check the [issues page](https://github.com/AdnanOlarmmi/Personal_Portfolio/issues).
 
 ## Show your support
 
-Give a ⭐️ if you like this project!
+Give a ⭐️ if you like this project and how we manage to build it!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
+- Thanks to the Microverse team for the great curriculum.
+- Thanks to the Code Reviewer(s) for the insightful feedbacks.
+- A great thanks to My coding partner(s), morning session team, and standup team for their contributions.
+- Hat tip to anyone whose code was used.
 
+## 📝 License
 
-background: linear-gradient(to right, rgba(255, 0, 0, 0.7), rgba(252, 0, 0, 0.7)),url()
-
+This project is [MIT](MIT.md) licensed
