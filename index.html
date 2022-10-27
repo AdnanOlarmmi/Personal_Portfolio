@@ -9,8 +9,6 @@
 		<link rel="stylesheet" href="styles.css" />
 	</head>
 	<body class="flex-column">
-		<div class="container flex-column">
-			<div class="hero-container flex-column">
 				<header>
 					<a class="nav__icon" href="#">Adnan Is-haq</a>
 					<nav class="nav flex-column">
@@ -136,20 +134,20 @@
 							</div>
 						</li>
 					</ul>
+					<section class="projects-container flex-column">
+						<div class="workMobile">
+							<img
+								id="arrow"
+								src="images/Group55.svg"
+								alt="arrow"
+							/>&nbsp;&nbsp;<span id="work">Work</span>
+						</div>
+						<p id="myrecentwork"><span id="portfolio"></span> my recent work</p>
+						<img class="line" src="images/Vector4.svg" alt="line" />
+						<div class="projects"></div>
+					</section>
 				</main>
-			</div>
-			<div class="projects-container flex-column">
-				<div class="workMobile">
-					<img
-						id="arrow"
-						src="images/Group55.svg"
-						alt="arrow"
-					/>&nbsp;&nbsp;<span id="work">Work</span>
-				</div>
-				<p id="myrecentwork"><span id="portfolio"></span> my recent work</p>
-				<img class="line" src="images/Vector4.svg" alt="line" />
-				<div class="projects"></div>
-				<div class="about flex-column" id="contact">
+				<footer class="about flex-column">
 					<h2 id="about__contactUs">CONTACT US</h2>
 					<p id="about__needHelp">
 						If you have an application you are interested in developing, a
@@ -199,7 +197,6 @@
 						/>
 						<p class="errorMSG"></p>
 					</form>
-					<footer class="flex-column">
 						<ul class="contactsIcon fIcon">
 							<li>
 								<img src="images/Icons/Vectorgithubicon.svg" alt="githubIcon" />
@@ -222,10 +219,8 @@
 							<li><img src="images/Icons/VectorMicon.svg" alt="Micon" /></li>
 						</ul>
 						<a href="#" id="email">emailhere@gmail.com</a>
-					</footer>
-				</div>
-			</div>
-		</div>
+					</div>
+			</footer>
 		<script src="index.js"></script>
 	</body>
 </html>
