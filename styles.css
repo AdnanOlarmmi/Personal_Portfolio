@@ -28,7 +28,16 @@ html {
 body {
   align-items: center;
   font-family: Roboto, sans-serif;
+  background-color: #191765;
+  background-size: 100vw;
+  background-image: url(images/Topcircles.svg);
+  background-repeat: no-repeat;
+  background-position: 0 10em;
   overflow-x: hidden;
+}
+
+.flex-row {
+  display: flex;
 }
 
 .flex-column {
@@ -36,42 +45,19 @@ body {
   flex-direction: column;
 }
 
-.container {
-  align-items: center;
-}
-
-.hero-container {
-  width: 100%;
-  background-color: #191765;
-  background-image: url(images/Topcircles.svg);
-  background-repeat: no-repeat;
-  background-size: 100vw 100%;
-
-  /* background-size: cover; */
-}
-
 header {
+  width: 100%;
   display: flex;
-  justify-content: space-between;
-  margin-top: 12px;
-  height: 100%;
+  align-items: flex-start;
+  z-index: 100;
 }
 
 .nav__icon {
-  margin-left: 24px;
   text-decoration: none;
   color: #fff;
   font-weight: 500;
   font-size: 18px;
-  line-height: 16px;
-
-  /* animation: rotateZ 5s; */
-}
-
-@keyframes rotateZ {
-  to {
-    transform: rotate(360deg);
-  }
+  margin: 0 1em;
 }
 
 nav {
@@ -117,15 +103,14 @@ nav {
 .burger {
   visibility: visible;
   cursor: pointer;
-  align-self: flex-end;
-  margin-right: 25px;
-  margin-top: 3px;
+  right: 25px;
+  top: 10px;
+  position: fixed;
 }
 
 .X-Icon {
   align-self: flex-end;
-  margin-right: 38px;
-  margin-bottom: 40px;
+  margin: 15px 38px 40px 0;
   cursor: pointer;
 }
 
@@ -142,11 +127,6 @@ nav {
 
 .close {
   visibility: hidden;
-}
-
-.flex-row {
-  display: flex;
-  flex-direction: row;
 }
 
 .sectionOne {
@@ -244,8 +224,6 @@ ul {
 
 .contactsIcon li {
   transition: transform 0.35s ease-in-out;
-
-  /* transition: all 0.35s ease-in-out, color 0.35s ease-in-out; easein might be ommited */
 }
 
 .contactsIcon li + li {
@@ -296,6 +274,7 @@ ul {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
+  place-items: center;
 }
 
 .projects__item {
@@ -387,13 +366,10 @@ ul {
   transition: all 0.35s ease-in;
 }
 
-#about__needHelp:hover {
-  transform: translate(8%);
-}
-
 form {
   margin-bottom: 40px;
   align-items: center;
+  width: 100%;
 }
 
 .input {
@@ -465,10 +441,10 @@ footer {
   color: #fff;
   width: 90vw;
   height: max-content;
-  position: absolute;
+  position: fixed;
   visibility: hidden;
   top: 50%;
-  left: -50%;
+  left: 50%;
   transform: translate(-50%, -50%);
   border: 2rem solid #fff;
   background-color: rgba(255, 255, 255, 0.16);
@@ -478,8 +454,6 @@ footer {
 }
 
 .showPopUp {
-  left: 50%;
-  position: fixed;
   visibility: visible;
 }
 
@@ -530,31 +504,18 @@ footer {
 
 @media only screen and (min-width: 768px) {
   body {
-    width: 100vw;
     font-size: 16px;
-    overflow-x: hidden;
-  }
-
-  .container {
-    width: 100%;
+    background-image: url(images/topcirclesdesktop.svg);
   }
 
   .nav__icon {
-    margin-left: 154rem;
     font-size: 18rem;
-  }
-
-  .hero-container {
-    background-image: url(images/topcirclesdesktop.svg);
-    background-size: 90vw;
-    background-position: 0% 35%;
+    margin: 0 200rem;
   }
 
   #section__ownerName {
     font-size: 90rem;
     line-height: 105.47rem;
-    text-align: center;
-    color: #7d73fc;
     margin: 140rem 142rem 24rem;
     width: 1156rem;
   }
@@ -632,20 +593,17 @@ footer {
 
   .nav__items {
     display: flex;
-    color: #fff;
     justify-content: flex-end;
     margin-right: 110rem;
   }
 
   .nav__items li {
-    cursor: pointer;
     font-weight: 500;
     font-size: 18rem;
     line-height: 16px;
   }
 
   .nav__items a {
-    color: #fff;
     text-decoration: none;
   }
 
@@ -692,9 +650,6 @@ footer {
 
   #myrecentwork {
     margin-top: 232rem;
-
-    /* size: 64rem; */
-
     line-height: 114rem;
     font-weight: 700;
     text-transform: capitalize;
