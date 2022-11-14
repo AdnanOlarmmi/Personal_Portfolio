@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Is-haq Adnan's Portfolio
+# Demo Portfolio
 
 This is a development about my developments
 - Here is the page preview
@@ -43,7 +43,7 @@ Click [here](https://www.loom.com/share/1b0968f84b46450fa426ca8cf6bd0d68) to wat
 
 ## Live Demo
 
-[Here](https://adnanolarmmi.github.io/Personal_Portfolio/) is the live demo.
+[Here](https://adnanolarmmi.github.io/Demo-Portfolio/) is the live demo.
 
 ## Getting Started
 
@@ -63,12 +63,12 @@ To get a local copy of this project up and running on your local machine follow 
 - Clone this repository or download the Zip folder:
 
 ```
-git clone https://github.com/AdnanOlarmmi/Personal_Portfolio.git
+git clone https://github.com/AdnanOlarmmi/Demo-Portfolio.git
 ```
 
 - Navigate to the location of the folder in your machine:
 
-**``you@your-Pc-name:~$ cd <folder>``**
+**``you@your-Pc-name:~$ cd Demo-Portfolio``**
 
 ### Usage
 
@@ -122,7 +122,7 @@ npx eslint .
 ## Contributing
 
 Contributions, issues, and feature requests are welcome!
-Feel free to check the [issues page](https://github.com/AdnanOlarmmi/Personal_Portfolio/issues).
+Feel free to check the [issues page](https://github.com/AdnanOlarmmi/Demo-Portfolio/issues).
 
 ## Show your support
 
