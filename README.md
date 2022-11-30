@@ -11,9 +11,7 @@ This is a development about my developments
 
 This represents me in my absence
 
-> Learning objectives
-
-- I Used semantic HTML ta
+> Learning objectiv
 ## Built With
 
 - HTML
