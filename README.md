@@ -13,8 +13,7 @@ This represents me in my absence
 
 > Learning objectives
 
-- I Used semantic HTML tags.
-- I Applied best practices in HTML co
+- I Used semantic HTML ta
 ## Built With
 
 - HTML
