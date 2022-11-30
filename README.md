@@ -16,8 +16,7 @@ This represents me in my absence
 - I Used semantic HTML tags.
 - I Applied best practices in HTML code.
 - Used CSS selectors correctly.
-- Used CSS box model.
-- Used Flexbox to place elements on t
+- Used CSS box mo
 ## Built With
 
 - HTML
