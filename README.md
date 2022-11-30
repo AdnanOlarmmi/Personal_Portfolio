@@ -21,10 +21,6 @@ This represents me in my absence
 - Demonstrated ability to create UIs adaptable to different screen sizes using media queries.
 - Used GitHub Pages to deploy web pages.
 - Applied JavaScript best practices and language style guides in code.
-- Used JavaScript to manipulate DOM elements.
-- Used JavaScript events.
-- Used objects to store and access data.
-- Communicated technical co
 ## Built With
 
 - HTML
