@@ -14,8 +14,7 @@ This represents me in my absence
 > Learning objectives
 
 - I Used semantic HTML tags.
-- I Applied best practices in HTML code.
-- Used CSS selectors correctly.
+- I Applied best practices in HTML co
 ## Built With
 
 - HTML
