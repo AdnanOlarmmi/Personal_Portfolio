@@ -16,7 +16,6 @@ This represents me in my absence
 - I Used semantic HTML tags.
 - I Applied best practices in HTML code.
 - Used CSS selectors correctly.
-- Used CSS box mo
 ## Built With
 
 - HTML
