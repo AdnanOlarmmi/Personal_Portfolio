@@ -24,8 +24,7 @@ This represents me in my absence
 - Used JavaScript to manipulate DOM elements.
 - Used JavaScript events.
 - Used objects to store and access data.
-- Communicated technical concepts to other technical people.
-
+- Communicated technical co
 ## Built With
 
 - HTML
