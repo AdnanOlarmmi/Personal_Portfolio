@@ -10,8 +10,6 @@ This is a development about my developments
 > |     | ![Screenshot1](./images/portfolioM.png) | ![Screenshot2](./images/portfolioD.png) |
 
 This represents me in my absence
-
-> Learning objectiv
 ## Built With
 
 - HTML
