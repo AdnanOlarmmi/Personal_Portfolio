@@ -17,10 +17,7 @@ This represents me in my absence
 - I Applied best practices in HTML code.
 - Used CSS selectors correctly.
 - Used CSS box model.
-- Used Flexbox to place elements on the page.
-- Demonstrated ability to create UIs adaptable to different screen sizes using media queries.
-- Used GitHub Pages to deploy web pages.
-- Applied JavaScript best practices and language style guides in code.
+- Used Flexbox to place elements on t
 ## Built With
 
 - HTML
