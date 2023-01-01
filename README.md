@@ -1,8 +1,8 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
+
 
 # Demo Portfolio
 
-This is a development about my developments
+This is a demo development 
 - Here is the preview
 
 > |     | Mobile version                      | Desktop version                      |     |
