@@ -3,7 +3,7 @@
 # Demo Portfolio
 
 This is a development about my developments
-- Here is the page preview
+- Here is the preview
 
 > |     | Mobile version                      | Desktop version                      |     |
 > | --- | ----------------------------------- | ------------------------------------ | --- |
